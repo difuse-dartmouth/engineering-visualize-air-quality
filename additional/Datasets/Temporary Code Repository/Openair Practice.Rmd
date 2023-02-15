@@ -1,0 +1,302 @@
+---
+title: "openair_data_import_and_test_1"
+author: "Andy Bean"
+date: "1/21/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Setup and Import Data
+
+```{r data}
+#Std Libraries
+library(openair); #vis pkg
+library(tidyverse); #helps vis pkg
+library(worldmet); #met pkg
+
+####Get Germany AQ Data
+library(dplyr); #data manip fxns
+library(saqgetr); #euro pkg
+
+#view all sites and sort down to desired location
+sites_dat <- get_saq_sites();
+de_sites <- filter(sites_dat, country == 'germany');
+berlin_sites <- filter(de_sites, latitude > 52.3 & latitude < 52.5 & longitude > 13.4 & longitude < 13.6)
+
+#see this
+head(de_sites)
+
+#let's test with Blankenfelde-Mahlow
+prac_dat <- get_saq_observations(
+    site = "debb086",
+    start = 2011,
+    end = 2015,
+    verbose = TRUE
+)
+
+####Get Germany MET Data
+#first find a station near the lat/long of the aq site
+#the next fxn produces a map, don't run if not needed
+
+#getMeta(lat = 52.54, lon = 13.34, returnMap = TRUE)
+
+#there is only one site for Berlin, so we'll take that 
+
+de_met <- importNOAA(code = "103850-99999", year = 2011:2015);
+
+#you can then merge the data together by date as noted in documentation
+
+#OPTION 1: subset and pivot
+#cut irrelevant rows
+new_prac_dat <- subset(prac_dat, select = -c(date_end, site, validity, summary, unit));
+
+#first mutate the extracted pollutant data
+prac_dat2 <- pivot_wider(
+  new_prac_dat,
+  id_cols = c(date, process),
+  names_from = variable,
+  values_from = value,
+  values_fill = NA
+)
+#not quite perfect but very close. What are the different processes and can they be averaged?
+
+#OPTION 2: saq_clean
+
+prac_dat3 <- prac_dat %>% 
+  saq_clean_observations(summary = "hour", valid_only = TRUE, spread = TRUE);
+
+#that works well but the processes disappeared
+
+####Append and Confirm
+#now append the data
+aq_berlin1 <- left_join(
+    de_met,
+    prac_dat3,
+    by = "date"
+)
+
+#compare to basic data from text example as this has the ideal formatting
+base_dat <- importAURN(site = "my1", year = 2000:2005);
+
+head(base_dat)
+head(aq_berlin1)
+
+#to export
+write.csv(aq_berlin1,"aq_berlin1.csv", row.names = TRUE)
+
+```
+
+## Practicing Plots with my1
+
+###Wind Rose
+
+```{r w_rose}
+#plot a windrose for everything
+windRose(aq_berlin1)
+
+#plot by year
+windRose(aq_berlin1, type = "year", layout = c(3, 2))
+
+#plot by pm10 (the type function is useful!)
+windRose(aq_berlin1, type = "pm10", layout = c(3, 2))
+```
+
+###Pollution Rose
+```{r p_rose}
+#basic example for nox
+pollutionRose(aq_berlin1, pollutant = "nox")
+
+#link with s02 using type
+pollutionRose(aq_berlin1, pollutant = "nox", type = "no2", layout = c(4, 1))
+
+#segment and normalize
+pollutionRose(aq_berlin1, pollutant = "nox", seg = 1, normalise = TRUE)
+    #seg = 1 removes the spaces between the bars
+    #normalize makes the length of all bars the same to see pollutant proportions more clearly
+```
+###Polar Frequencies
+```{r p_freq}
+#Basic example, a more detailed wind description
+polarFreq(aq_berlin1)
+
+#bin by year
+polarFreq(aq_berlin1, type = "year")
+
+#add pollutant
+polarFreq(aq_berlin1, type = "year", pollutant = "pm10", statistic = "mean", min.bin = 2)
+# we can see in detail how high concentrations came from SE in 2000, but moved north and decreased in frequency starting in 2003
+```
+###Percentile Rose
+```{r perc_rose}
+#basic example, the concentrations of the pollutant are marked on the rings and the percentiles are shaded
+percentileRose(aq_berlin1, pollutant = "pm10")
+
+#can also customize the percentiles and smooth the plot
+percentileRose(aq_berlin1, pollutant = "pm10", percentile = c(25, 50, 75, 90, 95, 99), col = "jet", smooth = TRUE)
+#we see the pm10 is pretty even from all directions
+```
+###Polar Plot
+```{r p_plot}
+#basic polar plot
+polarPlot(aq_berlin1, pollutant = "pm10")
+# so we see that there is only a high conc from the sw when the wind speed is higher than usual
+```
+
+###Polar Annulus
+```{r p_annul}
+#make polar annuli for all data, by season, by weekday, and by hour in a day
+
+#polarAnnulus(aq_berlin1, poll = "pm10", period = "trend", main = "Trend")
+polarAnnulus(aq_berlin1, poll = "pm10", period = "season", main = "Season")
+polarAnnulus(aq_berlin1, poll = "pm10", period = "weekday", main = "Weekday")
+polarAnnulus(aq_berlin1, poll = "pm10", period = "hour", main = "Hour")
+
+# shows direction of pollution over time from inner most to outermost ring
+
+```
+
+###Time Series Plots
+```{r time_s}
+# plot the values of pollutants over time
+timePlot(aq_berlin1,
+         pollutant = c("nox", "o3", "pm2.5", "pm10", "ws"),
+         y.relation = "free")
+
+#in a more specific time
+timePlot(selectByDate(aq_berlin1, year = 2014, month = "aug"),
+         pollutant = c("nox", "o3", "pm2.5", "pm10", "ws"),
+         y.relation = "free")
+
+#with averaging
+timePlot(aq_berlin1, pollutant = c("o3", "no2"), avg.time = "month",
+         y.relation = "free")
+```
+
+
+###Temporal Variations
+```{r time_v}
+#Time var with normalization
+timeVariation(aq_berlin1, 
+              pollutant = c("nox", "co", "no2", "o3"), 
+              normalise = TRUE)
+
+#Time var splitting by date
+aq_berlin1 <- splitByDate(aq_berlin1, dates= "1/1/2014",
+                        labels = c("before Jan. 2014", "After Jan. 2014"))
+
+timeVariation(aq_berlin1, pollutant = "pm10", 
+              group = "split.by", 
+              difference = TRUE)
+
+#Can also make greater CIs or group by a new feature that you determine
+```
+
+
+```{r time_p}
+# break down s02 by proportion contribution from wind direction
+timeProp(selectByDate(aq_berlin1, year = 2014),
+         pollutant = "no2", avg.time = "7 day",
+         proportion = "wd", date.breaks = 10, key.position = "top",
+         key.columns = 4, ylab = "no2 (ug/m3)")
+
+#break down by wind speed instead
+timeProp(selectByDate(aq_berlin1, year = 2014),
+         pollutant = "no2",
+         avg.time = "7 day",
+         n.levels = 3,
+         cols = "viridis",
+         proportion = "ws", date.breaks = 10,
+         key.position = "top", key.columns = 3,
+         ylab = "no2 (ug/m3)")
+
+```
+
+
+```{r trendlvl}
+
+# Trendlevel makes a heatmap by two variables x and y. By default it is month x and hour y
+trendLevel(aq_berlin1, pollutant = "nox", cols = "viridis")
+
+#With wind direction as y
+trendLevel(aq_berlin1, pollutant = "nox", y = "wd", 
+           border = "white", 
+           cols = "viridis")
+
+# or with one pollutant as x and another as y
+trendLevel(mydata, x = "nox", y = "no2", pollutant = "o3", 
+           border = "white", cols = "viridis",
+           n.levels = 30, statistic = "max", 
+           limits = c(0, 50))
+
+```
+
+
+```{r calplot}
+# basic calendar plot
+calendarPlot(aq_berlin1, pollutant = "o3", year = 2014)
+
+#annotate with the wind direction
+calendarPlot(aq_berlin1, pollutant = "o3", year = 2014, annotate = "ws")
+
+# can add averaging functions or specific binning fxns
+
+```
+
+
+```{r t_s_trend}
+
+#basic t_s
+TheilSen(aq_berlin1, pollutant = "o3", 
+         ylab = "ozone (ppb)", 
+         deseason = TRUE,
+         date.format = "%Y")
+
+#can be typed by wd
+TheilSen(aq_berlin1, pollutant = "o3", type = "wd", 
+         deseason = TRUE,
+         date.format = "%Y",
+         ylab = "ozone (ppb)")
+
+```
+
+
+```{r smooth}
+
+#smooth trend that might not be a straight line
+smoothTrend(aq_berlin1, pollutant = "o3", ylab = "concentration (ppb)",
+            main = "monthly mean o3")
+
+#deseasonalized (removing the effects of the seasonal cycle)
+smoothTrend(aq_berlin1, pollutant = "o3", deseason = TRUE, ylab = "concentration (ppb)",
+            main = "monthly mean deseasonalised o3")
+
+#with type by wind direction
+smoothTrend(aq_berlin1, pollutant = "o3", deseason = TRUE,
+             type = "wd")
+```
+
+
+```{r scatter}
+#creating some basic and higher level scatter plots
+#this is basic R scatter plot, looks nicer in ggplot2
+data2014 <- selectByDate(aq_berlin1, year = 2014)
+scatterPlot(data2014, x = "nox", y = "no2")
+
+#hex binning and shading
+scatterPlot(data2014, x = "nox", y = "no2", method = "hexbin", col= "jet")
+
+#further specs by density, linear fit, and grouping
+#can also add z variable which is heatmapped
+
+#grouping example. o3 is in shading, x and y are nox and no2, and there are charts for weekend/weekday and also season
+scatterPlot(data2014, 
+            x = "nox", y = "no2", z = "o3", 
+            type = c("season", "weekend"),
+            limits = c(0, 30))
+
+
+```
+
