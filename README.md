@@ -1,8 +1,10 @@
-# ENGS 37 (Winter 2022) #
+# ENGS 37 DIFUSE Module (Winter 2022) #
 
-## Contributors: Andy J. Bean, Monika Roznere, and Professor Scott D. Pauls ##
+![DIFUSE Data Science Module.  Engineering 37: Intro to Environmental Engineering.  Professor Petra Bonfert-Taylor, Dartmouth College.  Funded by NSF IUSE1917002](https://github.com/difuse-dartmouth/ENGS37_W22/blob/main/additional/repository_assets/thumbnail.png)
 
-![Alt text](https://github.com/difuse-dartmouth/ENGS37_W22/tree/main/additional/repository_assets/thumbnail.png)
+## Contributors: Andy J. Bean '23, Monika Roznere Ph.D. Student, Scott D. Pauls (PI: Professor of Mathematics), Petra Bonfert-Taylor (PI: Professor of Engineering)
+
+
 
 This module was developed through the DIFUSE project at Dartmouth College and funded by the National Science Foundation award IUSE-1917002.
 
