@@ -2,7 +2,7 @@
 
 ## Contributors: Andy J. Bean '23, Monika Roznere Ph.D. Student, Scott D. Pauls (PI: Professor of Mathematics), Petra Bonfert-Taylor (PI: Professor of Engineering)
 
-Provided here is a breakdown summary of all the assignments and tasks contained in the module. If you want to download all the assignment components as a compressed file, click [here](link)
+Provided here is a breakdown summary of all the assignments and tasks contained in the module. If you want to download all the assignment components as a compressed file, click [here](https://download-directory.github.io/?url=https://github.com/difuse-dartmouth/ENGS37_W22/tree/main/completed_module/public)
 
 ## Schedule ##
 |Day of the Week|Topic          |Assignment(s) Given|Assignment(s) Due|Due Type|
