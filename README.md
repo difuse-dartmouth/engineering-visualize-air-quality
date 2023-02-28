@@ -1,27 +1,49 @@
-# ENGS 37 DIFUSE Module (Winter 2022) #
+# ENGS 37 DIFUSE Module (Winter 2022) <a href="https://github.com/difuse-dartmouth/public-module-template/archive/refs/heads/main.zip"><img src="https://github.com/difuse-dartmouth/.github/blob/ecc522189d093025100d24feef5fc134f592c677/profile/download_button.png" alt="Download the entire module" style="width: 0.25in;"></a>
 
-![DIFUSE Data Science Module.  Engineering 37: Intro to Environmental Engineering.  Professor Petra Bonfert-Taylor, Dartmouth College.  Funded by NSF IUSE1917002](https://github.com/difuse-dartmouth/ENGS37_W22/blob/main/additional/repository_assets/thumbnail.png)
+This repository contains all the components of the data science module for Dartmouth College's ENGS 37.  Click the icon next to the course name above to download the entire module.
+
+![DIFUSE Data Science Module.  Engineering 37: Intro to Environmental Engineering.  Professor Petra Bonfert-Taylor, Dartmouth College.  Funded by NSF IUSE1917002](https://github.com/difuse-dartmouth/ENGS37_W22/blob/main/thumbnail.png)
 
 ## Contributors: Andy J. Bean '23, Monika Roznere Ph.D. Student, Scott D. Pauls (PI: Professor of Mathematics), Petra Bonfert-Taylor (PI: Professor of Engineering)
 
+## Primary Objective
+
+The primary objective for this module is to learn and then apply air quality dispersion modeling using an R-based programming module, with the help of the package ‘openair’ and open-sourced air quality datasets of cities in Germany. 
+
+## Student Expectations
+
+Give details of what students have as background.  Do we expect them to have certain skills? Does the course have prerequisites? etc.
+
+## Learning Objectives
+Students will be able to:
+1.	understand the basics of dispersion modeling
+2.	obtain and clean data sets
+3.	analyze those data sets
+4.	communicate results to peers and target audience members.
 
 
-This module was developed through the DIFUSE project at Dartmouth College and funded by the National Science Foundation award IUSE-1917002.
+## Schedule and Links
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+Use this page to get an idea of the timeline of the module, what components are involved, and what documents are related to each component. This is the schedule intended for module deployment by the DIFUSE team, though instructors are welcome to modify the timeline to fit their course environment.
 
-## Module Description ##
-This module is used to learn and then apply air quality dispersion modeling using an R-based programming module, with the help of the package ‘openair’ and open-sourced air quality datasets of cities in Germany. 
+| Week             |  Day | Assignment Description                     | Assignments Assigned  | Approx. Assignment duration | Assignment Files (Linked to Repository Contents) |
+|------------------|-----------------|--------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
+| Week 1 | Day 1     | Introduction to R and RStudio | Asgmt 1 |  2 days | [Assignment 1]("assignment 1") |
+| Week 1 | Day 2      | Group Building and Selecting your Germany Site | Asgmt 2 and Asgmt 6 | Asgmt 2 : 1 day; Asgmt 6: Till Week 3 |[Assigment 2 ]("assignment 2") [Assigment 6 ]("assignment 6") |
+| Week 1 | Day 3    | Introduction to R Package Openair | Asgmt 3 | 4 days |[Assignment 3]("assignment 3") |
+| Week 1 | Day 4      | Open Class | | | |
+| Week 2 | Day 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days; Asgmt 5: 2 days |[Assigment 4 ]("assignment 4") [Assigment 5 ]("assignment 5") |
+| Week 2 | Day 2    | Group Work |  |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
+| Week 2 | Day 3    | Group Work |  |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
+| Week 2 | Day 4    | Preliminary Presentations | Asgmt 4 Submission |  |[Assigment 4 ]("assignment 4") |
+| Week 3 | Day 1    | Group Work | |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
+| Week 3 | Day 2    | Group Work | |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
+| Week 3 | Day 3    | Final Presentation Part 1 | Asgmt 6 Submission | |[Assigment 6 ]("assignment 6") |
+| Week 3 | Day 4    | Final Presentation Part 2 | Asgmt 6 Submission |  |[Assigment 6 ]("assignment 6") |
 
-## Folder Structure ##
 
-For instructors and interested parties, the history of this repository (with detailed commits), can be found [here](https://github.com/difuse-dartmouth/ENGS37_W22/commits/main/).
 
-**On Repository Structure:**
-* **Preliminary**: Contains all files pre-requisite to module development. ```difuse_scaffolding``` is provided by DIFUSE, and ```course_materials``` (including course syllabus, relevant assignments, etc.) are provided by course instructor.
-* **Development**: Contains all files that developers deem necessary to be stored on GitHub. Given the uniqueness of each module and the abstraction that DIFUSE provides, the development team is allowed to use the platform they prefer (or as discussed with instructor)
-* **Completed_Module**: DIFUSE is committed to increasing data science education, and shares its work publicly as an NSF-funded grant. In order for these modules to remain usable by course instructors, DIFUSE removes the solutions to module assignments in its public release. Thus, the public repository will have the ```solutions\``` folder removed.
-* **Additional**: At the discretion of module developers, contains sample datasets and other materials. May include on-ramp tutorials for module platforms (e.g. MATLAB Onramp), or anecdotes of challenges in implementation (e.g. data sources that were inaccessible or difficult to acquire).
 
-### data-migration-template
+
+### private-migration-template
 Template used for data migration, DIFUSE 23W.
