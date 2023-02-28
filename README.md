@@ -1,4 +1,4 @@
-# ENGS 37 DIFUSE Module (Winter 2022) <a href="https://github.com/difuse-dartmouth/public-module-template/archive/refs/heads/main.zip"><img src="https://github.com/difuse-dartmouth/.github/blob/ecc522189d093025100d24feef5fc134f592c677/profile/download_button.png" alt="Download the entire module" style="width: 0.25in;"></a>
+# ENGS 37 DIFUSE Module (Winter 2022) <a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdifuse-dartmouth%2FENGS37_W22%2Ftree%2Fmain%2Fpublic"><img src="https://github.com/difuse-dartmouth/.github/blob/ecc522189d093025100d24feef5fc134f592c677/profile/download_button.png" alt="Download the entire module" style="width: 0.25in;"></a>
 
 This repository contains all the components of the data science module for Dartmouth College's ENGS 37.  Click the icon next to the course name above to download the entire module.
 
@@ -26,20 +26,20 @@ Students will be able to:
 
 Use this page to get an idea of the timeline of the module, what components are involved, and what documents are related to each component. This is the schedule intended for module deployment by the DIFUSE team, though instructors are welcome to modify the timeline to fit their course environment.
 
-| Week             |  Day | Assignment Description                     | Assignments Assigned  | Approx. Assignment duration | Assignment Files (Linked to Repository Contents) |
-|------------------|-----------------|--------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
-| Week 1 | Day 1     | Introduction to R and RStudio | Asgmt 1 |  2 days | [Assignment 1]("assignment 1") |
-| Week 1 | Day 2      | Group Building and Selecting your Germany Site | Asgmt 2 and Asgmt 6 | Asgmt 2 : 1 day; Asgmt 6: Till Week 3 |[Assigment 2 ]("assignment 2") [Assigment 6 ]("assignment 6") |
-| Week 1 | Day 3    | Introduction to R Package Openair | Asgmt 3 | 4 days |[Assignment 3]("assignment 3") |
-| Week 1 | Day 4      | Open Class | | | |
-| Week 2 | Day 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days; Asgmt 5: 2 days |[Assigment 4 ]("assignment 4") [Assigment 5 ]("assignment 5") |
-| Week 2 | Day 2    | Group Work |  |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
-| Week 2 | Day 3    | Group Work |  |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
-| Week 2 | Day 4    | Preliminary Presentations | Asgmt 4 Submission |  |[Assigment 4 ]("assignment 4") |
-| Week 3 | Day 1    | Group Work | |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
-| Week 3 | Day 2    | Group Work | |  |[Group Work]("Slides for Group Work Days 1-4.pptx") |
-| Week 3 | Day 3    | Final Presentation Part 1 | Asgmt 6 Submission | |[Assigment 6 ]("assignment 6") |
-| Week 3 | Day 4    | Final Presentation Part 2 | Asgmt 6 Submission |  |[Assigment 6 ]("assignment 6") |
+| Week  |  Day | Assignment Description  | Assignments Assigned  | Approx. Assignment duration | Assignment Files (Linked to Repository Contents) |
+|------|------|-----------------|------------------------------|--------------------------------|--------------------------------|
+| Wk 1 | 1     | Introduction to R and RStudio | Asgmt 1 |  2 days | [Assignment 1](assignment%201) |
+|  | 2      | Group Building and Selecting your Germany Site | Asgmt 2 and Asgmt 6 | Asgmt 2 : 1 day and Asgmt 6: Till Week 3 |[Assignment 2 ](assignment%202) [Assignment 6 ](assignment%206) |
+|  | 3    | Introduction to R Package Openair | Asgmt 3 | 4 days |[Assignment 3](assignment%203) |
+|  | 4      | Open Class | | | |
+| Wk 2 | 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days and Asgmt 5: 2 days |[Assignment 4 ](assignment%204) [Assignment 5 ](assignment%205) |
+|  | 2    | Group Work |  |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 3    | Group Work |  |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 4    | Preliminary Presentations | Asgmt 4 Submission |  |[Assignment 4 ](assignment%204) |
+| Wk 3 | 1    | Group Work | |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 2    | Group Work | |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 3    | Final Presentation Part 1 | Asgmt 6 Submission | |[Assignment 6 ](assignment%206) |
+|  | 4    | Final Presentation Part 2 | Asgmt 6 Submission |  |[Assignment 6 ](assignment%206) |
 
 
 
