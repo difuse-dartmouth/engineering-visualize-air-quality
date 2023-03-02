@@ -26,18 +26,18 @@ Use this page to get an idea of the timeline of the module, what components are 
 
 | Week  |  Day | Assignment Description  | Assignments Assigned  | Approx. Assignment duration | Assignment Files (Linked to Repository Contents) |
 |------|------|-----------------|------------------------------|--------------------------------|--------------------------------|
-| Wk 1 | 1     | Introduction to R and RStudio | Asgmt 1 |  2 days | [Assignment 1](assignment%201) |
-|  | 2      | Group Building and Selecting your Germany Site | Asgmt 2 and Asgmt 6 | Asgmt 2 : 1 day and Asgmt 6: Till Week 3 |[Assignment 2 ](assignment%202) [Assignment 6 ](assignment%206) |
-|  | 3    | Introduction to R Package Openair | Asgmt 3 | 4 days |[Assignment 3](assignment%203) |
+| Wk 1 | 1     | Introduction to R and RStudio | Asgmt 1 |  2 days | [Assignment 1](components/assignment%201) |
+|  | 2      | Group Building and Selecting your Germany Site | Asgmt 2 and Asgmt 6 | Asgmt 2 : 1 day and Asgmt 6: Till Week 3 |[Assignment 2 ](components/assignment%202) [Assignment 6 ](components/assignment%206) |
+|  | 3    | Introduction to R Package Openair | Asgmt 3 | 4 days |[Assignment 3](components/assignment%203) |
 |  | 4      | Open Class | | | |
-| Wk 2 | 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days and Asgmt 5: 2 days |[Assignment 4 ](assignment%204) [Assignment 5 ](assignment%205) |
-|  | 2    | Group Work |  |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
-|  | 3    | Group Work |  |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
-|  | 4    | Preliminary Presentations | Asgmt 4 Submission |  |[Assignment 4 ](assignment%204) |
-| Wk 3 | 1    | Group Work | |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
-|  | 2    | Group Work | |  |[Group Work](Slides%20for%20Group%20Work%20Days%201-4.pptx) |
-|  | 3    | Final Presentation Part 1 | Asgmt 6 Submission | |[Assignment 6 ](assignment%206) |
-|  | 4    | Final Presentation Part 2 | Asgmt 6 Submission |  |[Assignment 6 ](assignment%206) |
+| Wk 2 | 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days and Asgmt 5: 2 days |[Assignment 4 ](components/assignment%204) [Assignment 5 ](components/assignment%205) |
+|  | 2    | Group Work |  |  |[Group Work](components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 3    | Group Work |  |  |[Group Work](components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 4    | Preliminary Presentations | Asgmt 4 Submission |  |[Assignment 4 ](components/assignment%204) |
+| Wk 3 | 1    | Group Work | |  |[Group Work](components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 2    | Group Work | |  |[Group Work](components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
+|  | 3    | Final Presentation Part 1 | Asgmt 6 Submission | |[Assignment 6 ](components/assignment%206) |
+|  | 4    | Final Presentation Part 2 | Asgmt 6 Submission |  |[Assignment 6 ](components/assignment%206) |
 
 
 
