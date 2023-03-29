@@ -1,4 +1,4 @@
-# ENGS 37 DIFUSE Module (Winter 2022) <a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdifuse-dartmouth%2FENGS37_W22%2Ftree%2Fmain%2Fcompleted_module%2Fcomponents"><img src="https://github.com/difuse-dartmouth/.github/blob/ecc522189d093025100d24feef5fc134f592c677/profile/download_button.png" alt="Download the entire module" style="width: 0.25in;"></a>
+# ENGS 37 DIFUSE Module (Winter 2022) <a href="https://github.com/difuse-dartmouth/ENGS37_W22/archive/refs/heads/main/completed_module.zip"><img src="https://github.com/difuse-dartmouth/.github/blob/ecc522189d093025100d24feef5fc134f592c677/profile/download_button.png" alt="Download the entire module" style="width: 0.25in;"></a>
 
 This repository contains all the components of the data science module for Dartmouth College's ENGS 37.  Click the icon next to the course name above to download the entire module.
 
