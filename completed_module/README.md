@@ -2,8 +2,6 @@
 
 This repository contains all the components of the data science module for Dartmouth College's ENGS 37.  Click the icon next to the course name above to download the entire module.
 
-## Contributors: Andy J. Bean '23, Monika Roznere Ph.D. Student, Scott D. Pauls (PI: Professor of Mathematics), Petra Bonfert-Taylor (PI: Professor of Engineering)
-
 ## Primary Objective
 
 The primary objective for this module is to learn and then apply air quality dispersion modeling using an R-based programming module, with the help of the package ‘openair’ and open-sourced air quality datasets of cities in Germany. 
@@ -38,8 +36,3 @@ Use this page to get an idea of the timeline of the module, what components are 
 |  | 2    | Group Work | |  |[Group Work](components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
 |  | 3    | Final Presentation Part 1 | Asgmt 6 Submission | |[Assignment 6 ](components/assignment%206) |
 |  | 4    | Final Presentation Part 2 | Asgmt 6 Submission |  |[Assignment 6 ](components/assignment%206) |
-
-
-
-### public-migration-template
-Template used for data migration, DIFUSE 23W.
