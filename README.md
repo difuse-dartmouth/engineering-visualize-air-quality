@@ -52,7 +52,7 @@ Use this page to get an idea of the timeline of the module, what components are 
 
 ## Course Information
 
-This module was developed for an engineering course, <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Engineering-Sciences/ENGS-Engineering-Sciences-Undergraduate/ENGS-37">Introduction to Environmental Engineering, that is part of a study-abroad program in Germany.  Prerequisites for the course include single variable calculus and one term of general chemistry.
+This module was developed for an engineering course, <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Engineering-Sciences/ENGS-Engineering-Sciences-Undergraduate/ENGS-37">Introduction to Environmental Engineering</a>, that is part of a study-abroad program in Germany.  Prerequisites for the course include single variable calculus and one term of general chemistry.
 ---
 
 | <a href="https://github.com/difuse-dartmouth/engineering-visualize-air-quality/archive/refs/heads/main.zip"><img src="/repository-assets/download-all.png" alt="Download the entire module" align="center" style="width: 4in;"></a>| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="width=2in" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. |
