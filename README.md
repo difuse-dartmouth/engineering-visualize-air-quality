@@ -41,7 +41,7 @@ Use this page to get an idea of the timeline of the module, what components are 
 |  | 2      | Group Building and Selecting your Germany Site | Asgmt 2 and Asgmt 6 | Asgmt 2 : 1 day and Asgmt 6: Till Week 3 |[Assignment 2 ](completed_module/components/assignment%202), [Assignment 6 ](completed_module/components/assignment%206) |
 |  | 3    | Introduction to R Package Openair | Asgmt 3 | 4 days |[Assignment 3](completed_module/components/assignment%203) |
 |  | 4      | Open Class | | | |
-| Wk 2 | 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days and Asgmt 5: 2 days |[Assignment 4 ](completed_module/components/assignment%204), [Assignment 5 ](completed-module/components/assignment%205) |
+| Wk 2 | 1    | Tutorial on Advanced Openair | Asgmt 4 and Asgmt 5 | Asgmt 4 : 5 days and Asgmt 5: 2 days |[Assignment 4 ](completed_module/components/assignment%204), [Assignment 5 ](completed_module/components/assignment%205) |
 |  | 2    | Group Work |  |  |[Group Work](completed_module/components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
 |  | 3    | Group Work |  |  |[Group Work](completed_module/components/Slides%20for%20Group%20Work%20Days%201-4.pptx) |
 |  | 4    | Preliminary Presentations | Asgmt 4 Submission |  |[Assignment 4 ](completed_module/components/assignment%204) |
