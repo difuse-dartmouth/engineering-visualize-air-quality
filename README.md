@@ -1,6 +1,6 @@
 # Environmental Engineering: Air Quality DIFUSE Module
 
-## Contributors: Andy J. Bean ('23), Monika Roznere (GR), Scott D. Pauls (DIFUSE PI, Professor of Mathematics), Petra Bonfert-Taylor (DIFUSE PI, Professor of Engineering), Taylor Hickey ('23, Project Manager)
+## Contributors: Rahul Gupta ('26), Andy J. Bean ('23), Monika Roznere (GR), Scott D. Pauls (DIFUSE PI, Professor of Mathematics), Petra Bonfert-Taylor (DIFUSE PI, Professor of Engineering), Taylor Hickey ('23, Project Manager)
 
 ![Environmental Engineering: Air Quality DIFUSE Module Funded by NSF IUSE1917002](repository-assets/DIFUSE-ENGS37.png)
 
